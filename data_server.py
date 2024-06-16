@@ -50,7 +50,7 @@ def base():
 
 @app.route('/photoframe/<uid>')
 def validate_pf(uid):
-    allowed_modes = ["pre","onspot"]
+    allowed_modes = ["pre","onspot"] #For onspot and pre registration differentiation
     dbKey.acquire()
     cursor.execute(f"SELECT UID FROM PHOTOFRAME WHERE UID = '{uid}'")
     results = cursor.fetchall()

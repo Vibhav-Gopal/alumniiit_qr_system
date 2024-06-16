@@ -4,8 +4,9 @@ import cv2
 from tkinter import messagebox
 cam = cv2.VideoCapture(0)
 detect = cv2.QRCodeDetector()
+#TODO:add way to choose host at runtime (future upgrade)
 
-host="192.168.29.186" #TODO:add way to choose host at runtime (future upgrade)
+host="192.168.29.186" 
 port = 5000
 qrsFile = open("qrUids.txt","r")
 

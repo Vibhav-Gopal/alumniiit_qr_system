@@ -10,7 +10,6 @@ uids = [uid,uid]
 from cryptography.fernet import Fernet
 import qrcode
 
-# if input("WARNING : Regenerating new QR codes will render the old ones invalid. This step is irreversible. Are you Sure? Type \"YES\" to continue\n") != "YES" : exit(0)
 
 #Generate and write key to file
 key = Fernet.generate_key()
